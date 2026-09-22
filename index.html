@@ -338,7 +338,7 @@
             <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm">02</span>
             <div>
               <p class="text-xs text-sky-600 font-medium">Chữ số thứ 2</p>
-              <p class="text-base font-bold text-slate-800 font-serif">6 ÷ 3 = ?</p>
+              <p class="text-base font-bold text-slate-800 font-serif">6 ÷ 3 - 1 = ?</p>
             </div>
           </div>
           <input type="tel" maxlength="1" id="digit-1" oninput="handleDigitInput(1)" onkeydown="handleDigitKeyDown(1, event)" autocomplete="off" class="w-12 h-12 text-center text-xl font-bold rounded-xl bg-sky-50 border border-sky-200 focus:border-sky-500 focus:bg-white focus:outline-none transition text-sky-900 shadow-inner">
@@ -665,7 +665,7 @@
     /* CẤU HÌNH DỮ LIỆU CHÍNH */
     /* ================================================= */
     const CONFIG = {
-      targetPasscode: '2209', // Mật mã 2209
+      targetPasscode: '2109', // Mật mã 2209
       photo1: 'https://cdn.phototourl.com/free/2026-09-21-73be75fc-bfd2-40f9-95f3-4afee5bf53f8.jpg',
       photo2: 'https://cdn.phototourl.com/free/2026-09-21-0f1e41c7-d6eb-42a2-b196-e57c331ec8d5.jpg',
       recipientName: 'Gửi Ngọc Trinh,',
@@ -849,7 +849,7 @@
       if (entered === CONFIG.targetPasscode) {
         playSuccessChime();
         msg.className = 'text-xs text-emerald-600 font-bold h-5';
-        msg.textContent = '🎉 Mật mã 2209 chính xác! Đang mở quà...';
+        msg.textContent = '🎉 Mật mã 2109 chính xác! Đang mở quà...';
 
         for (let i = 0; i < 4; i++) {
           const inp = document.getElementById(`digit-${i}`);
